@@ -110,7 +110,7 @@ window.onload = function(){
 
                 // popUp image box
 
-                  container.classList.add("blur");
+                  //container.classList.add("blur");
 
                   imgBox = document.createElement("DIV");
                   imgBox.className = "popUpImg";
@@ -127,14 +127,21 @@ window.onload = function(){
 
                 // popUp image box
 
-      for (var i = 0; i < thumbCount.length; i++) {
 
-                if (currentImage == imgObjectArray[i]) {
-                    return count = i;
-                }
 
-}
+            for (var i = 0; i < thumbCount.length; i++) {
 
+                      if (currentImage === imgObjectArray[i]) {
+
+                          return count = i;
+                      }
+
+                  }
+
+                   console.log(currentImage);
+                   console.log(imgObjectArray[0])
+                   console.log(currentImage===imgObjectArray[0]);
+                    //console.log();
 
 
               }
@@ -264,7 +271,7 @@ function createPopup(){
 
     function closeOverlay(){
       overlayDiv.style.display = "none";
-      container.classList.remove("blur");
+      //container.classList.remove("blur");
     }
 
 // close overlay function
