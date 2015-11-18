@@ -37,26 +37,27 @@ window.onload = function(){
 
 // image objects
 
-     img = new createThumb('url("img/img1.jpg")');
-     img = new createThumb('url("img/img2.jpg")');
-     img = new createThumb('url("img/img3.jpg")');
-     img = new createThumb('url("img/img4.jpg")');
-     img = new createThumb('url("img/img5.jpg")');
-     img = new createThumb('url("img/img7.jpg")');
-     img = new createThumb('url("img/img8.jpg")');
-     img = new createThumb('url("img/img6.jpg")');
-     img = new createThumb('url("img/img9.jpg")');
-     img = new createThumb('url("img/img10.jpg")');
-     img = new createThumb('url("img/img11.jpg")');
-     img = new createThumb('url("img/img12.jpg")');
-     img = new createThumb('url("img/img13.jpg")');
-     img = new createThumb('url("img/img14.jpg")');
-     img = new createThumb('url("img/img15.jpg")');
-     img = new createThumb('url("img/img16.jpg")');
-     img = new createThumb('url("img/img17.jpg")');
-     img = new createThumb('url("img/img18.jpg")');
-     img = new createThumb('url("img/img19.jpg")');
-     img = new createThumb('url("img/img20.jpg")');
+
+     img = new createThumb('url(https://farm1.staticflickr.com/695/22618827597_fcca45ef4d_c.jpg)');
+     img = new createThumb('url(https://farm1.staticflickr.com/606/21893822586_c3e48f224e_c.jpg)');
+     img = new createThumb('url(https://farm6.staticflickr.com/5701/19951998424_3797aa642d_c.jpg)');
+     img = new createThumb('url(https://farm4.staticflickr.com/3787/20030125948_c3ecf392ba_c.jpg)');
+     img = new createThumb('url(https://farm1.staticflickr.com/263/19037242528_2be9de9948_c.jpg)');
+     img = new createThumb('url(https://farm1.staticflickr.com/270/18331518113_fccbc98f23_c.jpg)');
+     img = new createThumb('url(https://farm8.staticflickr.com/7486/15595599858_3e4a35fb96_c.jpg)');
+     img = new createThumb('url(https://farm6.staticflickr.com/5333/17668757336_f0c64cfd6f_c.jpg)');
+     img = new createThumb('url(https://farm9.staticflickr.com/8766/17304198655_6eac16760a_c.jpg)');
+     img = new createThumb('url(https://farm8.staticflickr.com/7627/16193390644_9f6c7648e2_c.jpg)');
+     img = new createThumb('url(https://farm9.staticflickr.com/8580/16521420529_6d9c24e42f_c.jpg)');
+     img = new createThumb('url(https://farm8.staticflickr.com/7362/16538135571_4d1246cfca_c.jpg)');
+     img = new createThumb('url(https://farm8.staticflickr.com/7538/16263391731_28ce593800_c.jpg)');
+     img = new createThumb('url(https://farm8.staticflickr.com/7581/15216495424_421b55419b_c.jpg)');
+     img = new createThumb('url(https://farm9.staticflickr.com/8896/18310898258_e42798b6b0_c.jpg)');
+     img = new createThumb('url(https://farm4.staticflickr.com/3938/15005623764_3fae74df31_c.jpg)');
+     img = new createThumb('url(https://farm4.staticflickr.com/3897/14949377887_7ee567f802_c.jpg)');
+     img = new createThumb('url(https://farm4.staticflickr.com/3895/14948809319_a0a99afb78_c.jpg)');
+     img = new createThumb('url(https://farm6.staticflickr.com/5567/14948971307_a0088a26be_c.jpg)');
+     img = new createThumb('url(https://farm4.staticflickr.com/3903/14948992927_57a1e4e748_c.jpg)');
 
 // image objects
 
@@ -110,7 +111,7 @@ window.onload = function(){
 
                 // popUp image box
 
-                  //container.classList.add("blur");
+                  container.classList.add("blur");
 
                   imgBox = document.createElement("DIV");
                   imgBox.className = "popUpImg";
@@ -128,20 +129,19 @@ window.onload = function(){
                 // popUp image box
 
 
+                console.log(currentImage);
+                console.log(imgObjectArray[0]);
+                console.log(currentImage === imgObjectArray[0]);
 
-            for (var i = 0; i < thumbCount.length; i++) {
 
-                      if (currentImage === imgObjectArray[i]) {
+            for (var j = 0; j < thumbCount.length; j++) {
 
-                          return count = i;
+                      if (currentImage === imgObjectArray[j]) {
+
+                          return count = j;
                       }
 
                   }
-
-                   console.log(currentImage);
-                   console.log(imgObjectArray[0])
-                   console.log(currentImage===imgObjectArray[0]);
-                    //console.log();
 
 
               }
@@ -271,7 +271,7 @@ function createPopup(){
 
     function closeOverlay(){
       overlayDiv.style.display = "none";
-      //container.classList.remove("blur");
+      container.classList.remove("blur");
     }
 
 // close overlay function
