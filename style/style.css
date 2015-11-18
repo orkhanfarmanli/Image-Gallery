@@ -87,7 +87,17 @@ body {
   text-align: center;
   z-index: 10;
   background: rgba(0, 0, 0, 0.7);
+
 }
+
+.blur{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 
 /*dark overlay div*/
 
@@ -104,6 +114,8 @@ body {
   bottom: 0;
   right: 0;
   z-index: 20;
+
+
 }
 
 /*slide box*/
@@ -172,6 +184,12 @@ body {
   height: 60px;
   background: #2C3E50;
   z-index: 5;
+  line-height: 60px;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: bold;
+  text-align: center;
+  color: white;
 }
 
 /*footer*/

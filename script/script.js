@@ -63,7 +63,7 @@ window.onload = function(){
 
 // little thumbnail count, increment as you wish
 
-  thumbCount = [1,2,3,4,5,6,7,8]
+  thumbCount = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // little thumbnail count, increment as you wish
 
@@ -110,6 +110,8 @@ window.onload = function(){
 
                 // popUp image box
 
+                  container.classList.add("blur");
+
                   imgBox = document.createElement("DIV");
                   imgBox.className = "popUpImg";
 
@@ -150,6 +152,8 @@ window.onload = function(){
 
     var footer = document.createElement("DIV");
         footer.className = "footer";
+    var footerText = document.createTextNode("© Orkhan Farmanli");
+        footer.appendChild(footerText);
         document.body.appendChild(footer);
 
     // footer
@@ -260,6 +264,7 @@ function createPopup(){
 
     function closeOverlay(){
       overlayDiv.style.display = "none";
+      container.classList.remove("blur");
     }
 
 // close overlay function
