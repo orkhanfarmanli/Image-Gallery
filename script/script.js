@@ -128,17 +128,24 @@ window.onload = function(){
 
                 // popUp image box
 
+// working on a firefox bug which encodes url
 
                 console.log(currentImage);
                 console.log(imgObjectArray[0]);
                 console.log(currentImage === imgObjectArray[0]);
 
+// working on a firefox bug which encodes url
 
             for (var j = 0; j < thumbCount.length; j++) {
 
                       if (currentImage === imgObjectArray[j]) {
 
                           return count = j;
+
+                      }else {
+
+                        alert("USE CHROME!!!");
+
                       }
 
                   }
