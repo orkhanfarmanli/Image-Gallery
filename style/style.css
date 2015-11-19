@@ -90,6 +90,9 @@ body {
 
 }
 
+/*dark overlay div*/
+
+/*background blur effect when thumbnail clicked*/
 
 .blur{
   -webkit-filter: blur(5px);
@@ -98,8 +101,7 @@ body {
    filter: blur(5px);
 }
 
-
-/*dark overlay div*/
+/*background blur effect when thumbnail clicked*/
 
 
 /*slide box*/

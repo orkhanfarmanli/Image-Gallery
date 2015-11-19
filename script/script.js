@@ -111,7 +111,12 @@ window.onload = function(){
 
                 // popUp image box
 
+
+                // background blur effect
+
                   container.classList.add("blur");
+
+                // background blur effect
 
                   imgBox = document.createElement("DIV");
                   imgBox.className = "popUpImg";
@@ -121,6 +126,7 @@ window.onload = function(){
                   var currentImage = this.style.backgroundImage;
                       imgBox.style.backgroundImage = currentImage;
 
+
                   // clicked image
 
                   imgBox.style.backgroundSize = "cover";
@@ -128,29 +134,15 @@ window.onload = function(){
 
                 // popUp image box
 
-// working on a firefox bug which encodes url
-
-                console.log(currentImage);
-                console.log(imgObjectArray[0]);
-                console.log(currentImage === imgObjectArray[0]);
-
-// working on a firefox bug which encodes url
 
             for (var j = 0; j < thumbCount.length; j++) {
 
-                      if (currentImage === imgObjectArray[j]) {
+
+                      if (currentImage === imgObjectArray[j] || currentImage.replace(/["]/g, '') === imgObjectArray[0]) {
 
                           return count = j;
-
-                      }else {
-
-                        alert("USE CHROME!!!");
-
                       }
-
                   }
-
-
               }
 
               thumbnailBody.appendChild(imgDivs);
@@ -240,7 +232,6 @@ function createPopup(){
 
   // next image
 
-//  count = 0;
 
       function nextImage() {
 
