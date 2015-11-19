@@ -138,7 +138,7 @@ window.onload = function(){
             for (var j = 0; j < thumbCount.length; j++) {
 
 
-                      if (currentImage === imgObjectArray[j] || currentImage.replace(/["]/g, '') === imgObjectArray[0]) {
+                      if (currentImage === imgObjectArray[j] || currentImage.replace(/["]/g, '') === imgObjectArray[j]) {
 
                           return count = j;
                       }
