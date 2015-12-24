@@ -13,9 +13,9 @@ window.onload = function(){
       var closeButt;
       var count;
       var images;
-      var thumbCount;
       var imgDivs;
       var imgObjectArray;
+      var thumbCount;
 
   // image and popup variables
 
@@ -25,6 +25,11 @@ window.onload = function(){
 
 // object array
 
+// thumbnail count (increment the number of little thumbnails to be shown as you wish)
+  
+    thumbCount = 12;
+  
+// thumbnail count end
 
 // image objects function
 
@@ -61,14 +66,6 @@ window.onload = function(){
 
 // image objects
 
-
-// little thumbnail count, increment as you wish
-
-  thumbCount = [1,2,3,4,5,6,7,8,9,10,11,12];
-
-// little thumbnail count, increment as you wish
-
-
 // structure of the html
 
     // header
@@ -98,7 +95,7 @@ window.onload = function(){
 
     // thumbnail divs
 
-      for (var i = 0; i < thumbCount.length; i++) {
+      for (var i = 0; i < thumbCount; i++) {
 
               imgDivs = document.createElement("DIV");
               imgDivs.className = "imgBox";
@@ -135,7 +132,7 @@ window.onload = function(){
                 // popUp image box
 
 
-            for (var j = 0; j < thumbCount.length; j++) {
+            for (var j = 0; j < thumbCount; j++) {
 
 
                       if (currentImage === imgObjectArray[j] || currentImage.replace(/["]/g, '') === imgObjectArray[j]) {
